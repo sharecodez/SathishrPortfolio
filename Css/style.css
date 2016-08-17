@@ -518,7 +518,7 @@ h5 {
 }
 a.totop-link {
     bottom:5px;
-    background:url(../Images/go-to-top-arrow.jpg) left top no-repeat;
+    background:url(Images/go-to-top-arrow.jpg) left top no-repeat;
     cursor: pointer;
     display: none;
     width:34px;
