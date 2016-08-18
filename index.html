@@ -26,7 +26,6 @@
     <link rel="stylesheet" href="Css/responsive.css" />
     <!-- Pie Chart / Skills -->
     <script type="text/javascript" src="Js/jquery-2.0.3.min.js"></script>
-    <script type="text/javascript" src="http://github.com/malsup/media/raw/master/jquery.media.js?v0.92"></script> 
     <!-- Progressbar / Skills-->
     <script type="text/javascript" src="Js/progressbar.js"></script>
     <!-- Portfolio-->
@@ -43,6 +42,15 @@
         ga('send', 'pageview');
 
     </script>
+    <style>
+        .pdfobject-container {
+            height: 500px;
+        }
+
+        .pdfobject {
+            border: 1px solid #666;
+        }
+    </style>
 </head>
 
 <body>
@@ -65,12 +73,13 @@
                 <a href="/index.html?page=skills">
                     <span id="link_skills">Skills</span>
                 </a>
-                <a href="/index.html?page=experience">
-                    <span id="link_experience">Experience</span>
-                </a>
                 <a href="/index.html?page=certification">
                     <span id="link_certification">Certification</span>
                 </a>
+                <a href="/index.html?page=experience">
+                    <span id="link_experience">Experience</span>
+                </a>
+               
                 <a href="/index.html?page=education">
                     <span id="link_education">Education</span>
                 </a>
@@ -220,8 +229,41 @@
                     </div>
                 </article>
 
+                <!-- Certification -->
+                <article class="content experience white-bg" id="chaptercertification">
+                    <div class="inner">
+                        <h2>Certification</h2>
+                        <div class="title-divider"></div>
+                        <h3>6 Years of Experience!</h3>
+                        <p>
+                            I have a mixed experience working at projects ranging from small scale web applications to Enterprise level applications coordinating with teams fo various sizes.
+                            These include projects where I design, architect, code, test & deploy end-to-end / just code my way through the requirements / make TSDs for business requirements & take care of delivery.
+                        </p>
+                        <div class="experience-con">
+                            <div class="container-sub">
+                                <div class="full-divider"></div>
+                                <div class="row">
+                                    <div class="experience-details">
+                                        <h3>Microsoft Certified Professional</h3>
+                                        <img src="Certificates/MCP.jpg" />
+                                    </div>
+
+
+                                    <div class="full-divider"></div>
+                                    <div class="experience-details">
+                                        <h3>Microsoft Specialist in azure</h3>
+                                        <img src="Certificates/MS.jpg" />
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
                 <!-- Experience -->
-                <article class="content experience white-bg" id="chapterexperience">
+                <article class="content experience gray-bg" id="chapterexperience">
                     <div class="inner">
                         <h2>Experience</h2>
                         <div class="title-divider"></div>
@@ -296,93 +338,8 @@
                     </div>
                 </article>
 
-                <!-- Certification -->
-                <article class="content experience white-bg" id="chaptercertification">
-                    <div class="inner">
-                        <h2>Certification</h2>
-                        <div class="title-divider"></div>
-                        <h3>6 Years of Experience!</h3>
-                        <p>
-                            I have a mixed experience working at projects ranging from small scale web applications to Enterprise level applications coordinating with teams fo various sizes.
-                            These include projects where I design, architect, code, test & deploy end-to-end / just code my way through the requirements / make TSDs for business requirements & take care of delivery.
-                        </p>
-                        <div class="experience-con">
-                            <div class="container-sub">
-                                <div class="full-divider"></div>
-                                <div class="row">
-                                    <div class="experience-details">
-                                        <a class="media" href="Certificates/MCP.pdf">PDF File</a>
-                                        <a class="media {type: 'html'}" href="../">HTML File</a> 
-
-
-                                        <embed src="Certificates/MCP.pdf" width="500" height="375" type='application/pdf'>
-                                        <object data="" type="application/pdf" width="100%" height="100%">
-                                            <p>Alternative text - include a link <a href="myfile.pdf">to the PDF!</a></p>
-                                        </object>
-
-                                        <!--<div class="col-6 margin-bottom50 margin-top50">
-                                            <div class="col-3 icon-block"><i class="fa fa-paper-plane"></i></div>
-                                            <div class="flot-left">
-                                                <h5>CG-VAK Software</h5>
-                                                <h4>Sr.Software Engineer</h4>
-                                                <span>2016 - Present</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 margin-bottom50 margin-top50 no-margin-top">
-                                            Responsible for UI development and building platform for digital marketeers using micro services architecture. The project involves crunching billions of click stream data from various sources in unstructured format
-                                            into meaningful insights & recommendations.
-                                        </div>-->
-                                    </div>
-                                    <div class="full-divider"></div>
-                                    <div class="experience-details">
-                                        <div class="col-6 margin-bottom50 margin-top50">
-                                            <div class="col-3 icon-block"><i class="fa fa-h-square"></i></div>
-                                            <div class="flot-left">
-                                                <h5>Hexaware Technologies</h5>
-                                                <h4>Software Engineer</h4>
-                                                <span>2014 - 2016</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 margin-bottom50 margin-top50 no-margin-top">
-                                            Responsible for building platform for digital marketeers using micro services architecture. The project involves crunching billions of click stream data from various sources in unstructured format
-                                            into meaningful insights & recommendations.
-                                        </div>
-                                    </div>
-                                    <div class="full-divider"></div>
-                                    <div class="experience-details">
-                                        <div class="col-6 margin-bottom50 margin-top50">
-                                            <div class="col-3 icon-block"><i class="fa fa-italic"></i></div>
-                                            <div class="flot-left">
-                                                <h5>India Syndicate</h5>
-                                                <h4>Web Developer</h4>
-                                                <span>2012 - 2014</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 margin-bottom50 margin-top50 no-margin-top">
-                                            Responsible for development & enhancement of application which generates transaction reports for client's Reinsurance portfolio.
-                                            The application processes the feeds from other teams and updates the reinsurance transaction details in DB which serves as a backend for a web application used by Insurance professionals.
-                                        </div>
-                                    </div>
-                                    <div class="full-divider"></div>
-                                    <div class="experience-details">
-                                        <div class="col-6 margin-bottom50 margin-top50">
-                                            <div class="col-3 icon-block"><i class="fa fa-font"></i></div>
-                                            <div class="flot-left">
-                                                <h5>Aadara Software Tech</h5>
-                                                <h4>Junior Programmer</h4>
-                                                <span>2010 - 2012</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 margin-bottom50 margin-top50 no-margin-top">Responsible for development & maintenance as LIC based projects.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
                 <!-- Education -->
-                <article class="content education gray-bg" id="chaptereducation">
+                <article class="content education white-bg" id="chaptereducation">
                     <div class="inner">
                         <h2>Education</h2>
                         <div class="title-divider"></div>
@@ -477,7 +434,7 @@
                 </article>
 
                 <!-- Contact -->
-                <article class="content contact gray-bg" id="chaptercontact">
+                <article class="content contact white-bg" id="chaptercontact">
                     <div class="inner">
                         <h2>Contact</h2>
                         <div class="title-divider"></div>
@@ -573,6 +530,8 @@
                 { page: "Js/jquery.page.js" }
                 );
     </script>
+    <script src="Js/pdfobject.min.js"></script>
+    <script>PDFObject.embed("/Certificates/MS.pdf", "#example1");</script>
     <!-- Fit Video -->
     <script type="text/javascript" src="Js/jquery.fitvids.js"></script>
     <!-- All Javascript Component-->
@@ -587,7 +546,8 @@
             $("#link_education").parent().attr("href", "#chaptereducation")
             $("#link_portfolio").parent().attr("href", "#chapterportfolio")
             $("#link_contact").parent().attr("href", "#chaptercontact")
-            $('a.media').media({ width: 500, height: 400 });
+            
+
         });
     </script>
 
